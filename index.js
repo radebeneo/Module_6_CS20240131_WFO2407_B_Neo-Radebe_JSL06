@@ -48,7 +48,7 @@ function addToOrder(itemName) {
     // Get the order items list and the order total element from the HTML
 
     // Create a list item for the order
-
+    const orderItem = document.createElement('li');
     // Set the text content of the list item to the item name
 
     // Append the list item to the order items list
