@@ -23,8 +23,6 @@ function displayMenuItems(menu) {
 
         // Create an element to represent a list of items
         const itemList = document.createElement('ul');
-        
-        // Append a list of items element to the menu container
 
         // Loop through the items in the category and create list items
         menu[category].forEach(item => {
@@ -39,7 +37,9 @@ function displayMenuItems(menu) {
             });
             // Append the list item to the list of items
             itemList.appendChild(listItem);
-        });            
+        });    
+        // Append the list of items to the menu container
+        menuContainer.appendChild(itemList);        
     }
 }
 
