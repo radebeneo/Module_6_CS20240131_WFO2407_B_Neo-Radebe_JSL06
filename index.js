@@ -67,7 +67,11 @@ function addToOrder(itemName) {
 
     // Update the text content of the order total element with the new total
     orderTotalElement.textContent = totalPrice.toFixed(2); // Display with 2 decimal places
+    };
 }
+
+// Create a closure that maintains the state of the order
+const handleAddToOrder = addToOrder();
 
 // Function to initialize the menu system
 function initMenuSystem(menu) {
