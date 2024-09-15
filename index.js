@@ -66,7 +66,7 @@ function addToOrder(itemName) {
         totalPrice += 90; // Assuming each item costs R90
 
     // Update the text content of the order total element with the new total
-    
+    orderTotalElement.textContent = totalPrice.toFixed(2); // Display with 2 decimal places
 }
 
 // Function to initialize the menu system
