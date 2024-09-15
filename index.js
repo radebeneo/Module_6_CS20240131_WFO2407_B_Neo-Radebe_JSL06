@@ -34,12 +34,13 @@ function displayMenuItems(menu) {
             listItem.textContent = item;
 
             // Attach a click event listener to the list item to add it to the order
-            //listItem.addEventListener('click', () => {
+            listItem.addEventListener('click', () => {
                 addToOrder(item);
             });
             // Append the list item to the list of items
-
-            
+            itemList.appendChild(listItem);
+        });            
+    }
 }
 
 // Callback function for adding an item to the order
