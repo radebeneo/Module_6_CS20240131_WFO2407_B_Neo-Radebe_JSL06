@@ -60,10 +60,13 @@ function addToOrder(itemName) {
 
     // Append the list item to the order items list
     orderItemsList.appendChild(orderItem);
-    
+
     // Calculate and update the total price
+    order.push(itemName);
+        totalPrice += 90; // Assuming each item costs R90
 
     // Update the text content of the order total element with the new total
+    
 }
 
 // Function to initialize the menu system
